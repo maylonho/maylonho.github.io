@@ -12,13 +12,27 @@ body{
     margin: 0 auto;
 }
 
+.logo-nav{
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.conteudoNav{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
 .menu{
     display: flex;
     background-color: darkgrey;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 .logo-nav img{
-    width: 80px;
+    width: 120px;
 }
 
 
