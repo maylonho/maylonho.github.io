@@ -3,13 +3,27 @@
     padding: 0;
 }
 
+body{
+    background-color: rgb(202, 202, 202);
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+
 .menu{
+    display: flex;
     background-color: darkgrey;
 }
 
+.logo-nav img{
+    width: 80px;
+}
+
+
 .menu-lista{
     display: flex;
-    justify-content: flex-end;
 }
 
 .menu-item{
@@ -27,6 +41,6 @@
 }
 
 .menu-item a {
-    color: black;
+    color: rgb(245, 238, 238);
     text-decoration: none;
 }
