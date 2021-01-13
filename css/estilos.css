@@ -8,8 +8,16 @@ body{
 }
 
 .container{
-    width: 90%;
+    width: 70vw;
+    height: 100vh;
     margin: 0 auto;
+    background-color: aqua;
+}
+
+.linhaCentralizada{
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .logo-nav{
@@ -26,7 +34,7 @@ body{
 
 .menu{
     display: flex;
-    background-color: darkgrey;
+    background-color: rgb(49, 49, 49);
     padding-left: 10%;
     padding-right: 10%;
 }
@@ -50,11 +58,31 @@ body{
     font-family: sans-serif;
     
 }
-.menu-item:hover{
+
+.menu-item a {
+    color: rgb(243, 243, 243);
+    text-decoration: none;
+}
+
+.menu-item a:hover{
+    color: rgb(255, 255, 255);
     text-decoration: underline;
 }
 
-.menu-item a {
-    color: rgb(245, 238, 238);
-    text-decoration: none;
+.fotoPerfil{
+    width: 30vh;
+    height: 40vh;
+    margin-top: 10px;
+    background-color: azure;
+}
+
+.sobreMim{
+    text-align: justify;
+    padding: 10px;
+    border-left: 3px solid rgb(98, 98, 255);
+}
+
+.sobreMim p, h1 {
+    margin-bottom: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
