@@ -7,36 +7,73 @@
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
+    <script src="js/funcoes.js"></script>
+
     <nav class="menu">
         <div class="logo-nav">
             <img src="imgs/logo-white.png" alt="">
         </div>
         <div class="conteudoNav">
             <ul class="menu-lista">
-                <li class="menu-item"><a href="#">Início</a></li>
+                <li class="menu-item"><a href="#home">Início</a></li>
                 <li class="menu-item"><a href="#">Sobre</a></li>
-                <li class="menu-item"><a href="#">Portfólio</a></li>
+                <li class="menu-item"><a href="#port">Portfólio</a></li>
                 <li class="menu-item"><a href="#">Contato</a></li>
             </ul>
         </div>
     </nav>
 
     
-    <div class="container">
-        <div class="linhaCentralizada">
+    <div class="container" id="home">
+        <div class="linha centerH">
             <div class="fotoPerfil">
 
             </div>
         </div>
 
-        <div class="linhaCentralizada">
-            <div class="sobreMim">
-                <h1>Sobre</h1>
-                <p>Olá, meu nome é Maylon Henrique de Oliveira, tenho 25 anos, e atualmente estou cursando Engenharia de Computação. Também já cursei outros cursos na área de Ti, como o Curso técnico de Desenvolvimento de Sitemas. Tenho conhecimento e algumas das linguagens mais utilizadas no mercado, como C, C#, Visual Basic, e linguagens de marcação e destinadas a web, como HTML, CSS, JavaScript entre outras.</p>
-                <br/>
-                <p>O Senhor é o meu pastor, nada me faltará. Salmos 23</p>
-            </div>
+        <div class="sobreMim">
+            <h1>Sobre</h1>
+            <p>Olá, meu nome é Maylon Henrique de Oliveira, tenho 25 anos, e atualmente estou cursando Engenharia de Computação. Também já cursei outros cursos na área de Ti, como o Curso técnico de Desenvolvimento de Sitemas. Tenho conhecimento e algumas das linguagens mais utilizadas no mercado, como C, C#, Visual Basic, e linguagens de marcação e destinadas a web, como HTML, CSS, JavaScript entre outras.</p>
+            <br/>
+            <p>O Senhor é o meu pastor, nada me faltará. Salmos 23</p>
         </div>
+
+        
+        <div class="portfolio">
+            <div class="linha">
+                <h1 id="port">Portfólio</h1>
+            </div>
+            <div class="itemPortfolio"></div>
+            <div class="itemPortfolio"></div>
+            <div class="itemPortfolio"></div>
+        </div>
+
+        <div class="contato">
+            <form action="#">
+                <div class="coluna">
+                    <label for="nome">Nome</label>
+                    <input type="text">
+                </div>
+                <div class="coluna">
+                    <label for="nome">e-mail</label>
+                    <input type="email">
+                </div>
+                <div class="coluna">
+                    <label for="nome">Assunto</label>
+                    <input type="text">
+                </div>
+                <div class="coluna">
+                    <label for="msg">Mensagem</label>
+                    <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Descreva sua mensagem"></textarea>
+                </div>
+                <div class="linha alinharD">
+                    <button>Enviar</button>
+                </div>
+                
+                
+            </form>
+        </div>
+        
     </div> 
 
 </body>
