@@ -17,9 +17,16 @@ body{
 }
 
 .container{
-    width: 70vw;
     margin: 0 auto;
     padding-bottom: 100px;
+}
+
+.tamContainerPc{
+    width: 70vw;
+}
+
+.tamContainerMobile{
+    width: 90vw;
 }
 
 .linha{
@@ -67,7 +74,7 @@ body{
     padding-left: 10%;
     padding-right: 10%;
     opacity: 0.95;
-    width: 79vw;
+    width: 80%;
 }
 
 .menuAnimDown {
