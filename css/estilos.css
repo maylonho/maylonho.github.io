@@ -138,13 +138,13 @@ body{
 }
 
 section{
-    min-height: 100vh;
-    padding-top: 100px;
+    min-height: 80vh;
+    padding-top: 50px;
 }
 
 .sobreMim{
     text-align: justify;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
 .redesSociais{
