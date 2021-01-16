@@ -5,6 +5,7 @@ html{
     margin: 0;
     padding: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(70, 70, 70);
 }
 
 p, h1, h2, h3, h4, h5 {
@@ -93,6 +94,7 @@ body{
     transition: transform 2s;
     transform: translateY(50px);
 }
+
 .menuAnimUp {
     position: fixed;
     margin-top: -55px;
@@ -100,13 +102,10 @@ body{
     transform: translateY(-50px);
 }
 
-
-
 .logo-nav img{
     width: 100px;
     padding: 5px;
 }
-
 
 .menu-lista{
     display: flex;
@@ -132,12 +131,6 @@ body{
     text-decoration: underline;
 }
 
-.fotoPerfil{
-    width: 30vh;
-    height: 40vh;
-    margin-top: 10px;
-    background-color: azure;
-}
 
 .section{
     border-left: 4px solid rgb(98, 98, 255);
@@ -152,6 +145,21 @@ section{
 .sobreMim{
     text-align: justify;
     margin-bottom: 100px;
+}
+
+.redesSociais{
+    display: flex;
+}
+
+.redesSociais img{
+    width: 40px;
+    height: 40px;
+    padding-right: 10px;
+}
+
+.imgSeta img{
+    width: 30px;
+    height: 20px;
 }
 
 .portfolio{
@@ -171,10 +179,10 @@ section{
 .itemPortMobile{
     width: 95%;
     height: 50vw;
+    margin-bottom: 60px;
 }
 
 .itemPortfolio{
-    margin-bottom: 10px;
     margin-left: 10px;
 }
 
@@ -186,8 +194,9 @@ section{
     margin: 0;
     padding: 0;
     color: rgb(99, 99, 99);
-    font-size: 12pt;
+    font-size: 11pt;
 }
+
 
 .itemPortfolio .divImg{
     background-color: rgb(226, 226, 226);
