@@ -16,86 +16,86 @@
         <div class="conteudoNav">
             <ul class="menu-lista">
                 <li class="menu-item"><a href="#home">Início</a></li>
-                <li class="menu-item"><a href="#">Sobre</a></li>
-                <li class="menu-item"><a href="#port">Portfólio</a></li>
-                <li class="menu-item"><a href="#">Contato</a></li>
+                <li class="menu-item"><a href="#sobre">Sobre</a></li>
+                <li class="menu-item"><a href="#portfolio">Portfólio</a></li>
+                <li class="menu-item"><a href="#contato">Contato</a></li>
             </ul>
         </div>
     </nav>
 
     
     <div class="container" id="home">
-        <div class="linha centerH">
-            <div class="fotoPerfil"  onclick="valor()">
-
+        <section id="sobre">
+            <div class="sobreMim section">
+                <h1>Sobre</h1>
+                <h4>Um pouco sobre mim</h4>
+                <p>Olá, meu nome é Maylon Henrique de Oliveira, tenho 25 anos, e atualmente estou cursando Engenharia de Computação. Também já cursei outros cursos na área de Ti, como o Curso técnico de Desenvolvimento de Sitemas. Tenho conhecimento e algumas das linguagens mais utilizadas no mercado, como C, C#, Visual Basic, e linguagens de marcação e destinadas a web, como HTML, CSS, JavaScript entre outras.</p>
+                <br/>
+                <p>O Senhor é o meu pastor, nada me faltará. Salmos 23</p>
             </div>
-        </div>
-
-        <div class="sobreMim">
-            <h1>Sobre</h1>
-            <p>Olá, meu nome é Maylon Henrique de Oliveira, tenho 25 anos, e atualmente estou cursando Engenharia de Computação. Também já cursei outros cursos na área de Ti, como o Curso técnico de Desenvolvimento de Sitemas. Tenho conhecimento e algumas das linguagens mais utilizadas no mercado, como C, C#, Visual Basic, e linguagens de marcação e destinadas a web, como HTML, CSS, JavaScript entre outras.</p>
-            <br/>
-            <p>O Senhor é o meu pastor, nada me faltará. Salmos 23</p>
-        </div>
-
+        </section>
         
-        <div class="portfolio">
-            <div class="linha">
-                <h1 id="port">Portfólio</h1>
-            </div>
-            <div id="itemPortfolio" class="itemPortfolio">
-                <div class="divTit">
-                    <h5>Portfólio</h5>
-                </div> 
-                <div class="divImg">
-
+        <section id="portfolio">
+            <div class="portfolio section">
+                <div class="linha">
+                    <h1 id="port">Portfólio</h1>
+                </div>
+                <div id="itemPortfolio" class="itemPortfolio">
+                    <div class="divTit">
+                        <h5>VB - Brasil Sushi</h5>
+                    </div> 
+                    <div class="divImg">
+                        <img src="imgs/port3.png" alt="">
+                    </div>
+                </div>
+                <div id="itemPortfolio" class="itemPortfolio">
+                    <div class="divTit">
+                        <h5>Web - Gestão de Vendas</h5>
+                    </div> 
+                    <div class="divImg">
+                        <img src="imgs/port1.png" alt="">
+                    </div>
+                </div>
+                <div id="itemPortfolio" class="itemPortfolio">
+                    <div class="divTit">
+                        <h5>Portfólio</h5>
+                    </div> 
+                    <div class="divImg">
+    
+                    </div>
                 </div>
             </div>
-            <div id="itemPortfolio" class="itemPortfolio">
-                <div class="divTit">
-                    <h5>Portfólio</h5>
-                </div> 
-                <div class="divImg">
-
-                </div>
-            </div>
-            <div id="itemPortfolio" class="itemPortfolio">
-                <div class="divTit">
-                    <h5>Portfólio</h5>
-                </div> 
-                <div class="divImg">
-
-                </div>
-            </div>
-        </div>
-
-        <div class="contato">
-            <form action="#">
-                <div class="coluna">
-                    <label for="nome">Nome</label>
-                    <input type="text">
-                </div>
-                <div class="coluna">
-                    <label for="nome">e-mail</label>
-                    <input type="email">
-                </div>
-                <div class="coluna">
-                    <label for="nome">Assunto</label>
-                    <input type="text">
-                </div>
-                <div class="coluna">
-                    <label for="msg">Mensagem</label>
-                    <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Descreva sua mensagem"></textarea>
-                </div>
-                <div class="linha alinharD">
-                    <button>Enviar</button>
-                </div>
-                
-                
-            </form>
-        </div>
+        </section>
         
+        <section id="contato">
+            <div class="contato section">
+                <div class="linha">
+                    <h1 id="port">Contato</h1>
+                </div>
+                <form action="#">
+                    <div class="coluna">
+                        <label for="nome">Nome</label>
+                        <input type="text">
+                    </div>
+                    <div class="coluna">
+                        <label for="nome">e-mail</label>
+                        <input type="email">
+                    </div>
+                    <div class="coluna">
+                        <label for="nome">Assunto</label>
+                        <input type="text">
+                    </div>
+                    <div class="coluna">
+                        <label for="msg">Mensagem</label>
+                        <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Descreva sua mensagem"></textarea>
+                    </div>
+                    <div class="linha alinharD">
+                        <button>Enviar</button>
+                    </div>
+                    
+                </form>
+            </div>
+        </section>
     </div> 
-
 </body>
 </html>

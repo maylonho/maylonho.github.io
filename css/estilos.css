@@ -12,6 +12,10 @@ p, h1, h2, h3, h4, h5 {
     margin-bottom: 10px;
 }
 
+h1{
+    font-size: 26pt;
+}
+
 body{
     background-color: rgb(202, 202, 202);
 }
@@ -68,13 +72,19 @@ body{
     justify-content: flex-end;
 }
 
+.paddingL10{
+    padding-left: 10%;
+}
+
+.paddingR10{
+    padding-right: 10%;
+}
+
 .menu{
     display: flex;
     background-color: rgb(49, 49, 49);
-    padding-left: 10%;
-    padding-right: 10%;
     opacity: 0.95;
-    width: 80%;
+    width: 100%;
 }
 
 .menuAnimDown {
@@ -129,29 +139,37 @@ body{
     background-color: azure;
 }
 
+.section{
+    border-left: 4px solid rgb(98, 98, 255);
+    padding-left: 10px;
+}
+
+section{
+    min-height: 100vh;
+    padding-top: 100px;
+}
+
 .sobreMim{
     text-align: justify;
-    padding: 10px;
-    border-left: 3px solid rgb(98, 98, 255);
     margin-bottom: 100px;
 }
 
 .portfolio{
     display: flex;
     flex-wrap: wrap;
-    border-left: 3px solid rgb(98, 98, 255);
-    padding-left: 10px;
     margin-bottom: 100px;
 }
 
 
 .itemPortPc{
-    width: calc(33.33% - 20px);
+    /*width: calc(33.33% - 20px);*/
+    flex-grow: 1; /* determina que os item ocupem a linha toda (como o width acima faz) */
+    flex-basis: 0; /*força todos os itens a terem o mesmo tamanho*/
     height: 15vw;
 }
 
 .itemPortMobile{
-    width: 80vw;
+    width: 95%;
     height: 50vw;
 }
 
@@ -178,10 +196,15 @@ body{
     height: calc(100% - 20px);
 }
 
+.divImg img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
 
 .contato{
-    border-left: 3px solid rgb(98, 98, 255);
-    padding-left: 10px;
+    
 }
 
 .contato label{

@@ -1,26 +1,36 @@
 function redimensionar(){
+    var logoNav = document.getElementsByClassName('logo-nav')[0];
+    var contNav = document.getElementsByClassName('conteudoNav')[0];
     var imgLogo = document.getElementById("logo-nav");
-    var divLogo = document.getElementById("logo-div");
     var container = document.getElementsByClassName('container')[0];
     var itemPort = document.querySelectorAll('div.itemPortfolio');
-    var distanciaLogo = divLogo.offsetLeft;
-    if (distanciaLogo < 60) {
-        imgLogo.style.display = 'none';
+    var body = document.querySelector('body');
+    var disBody = body.offsetWidth;
+    if (disBody < 700) {
         container.classList.remove("tamContainerPc");
         container.classList.add("tamContainerMobile");
+        logoNav.classList.remove("paddingL10");
+        contNav.classList.remove("paddingR10");
         for (let i = 0; i < itemPort.length; i++) {
             itemPort[i].classList.add("itemPortMobile");
             itemPort[i].classList.remove("itemPortPc");
         }
-    }else if (distanciaLogo > 60){
-        imgLogo.style.display = 'initial';
+    }else{
         container.classList.add("tamContainerPc");
         container.classList.remove("tamContainerMobile");
+        logoNav.classList.add("paddingL10");
+        contNav.classList.add("paddingR10");
         for (let i = 0; i < itemPort.length; i++) {
             itemPort[i].classList.remove("itemPortMobile");
             itemPort[i].classList.add("itemPortPc");
         }
 
+    }
+
+    if (disBody < 550){
+        imgLogo.style.display = 'none';
+    }else{
+        imgLogo.style.display = 'initial';
     }
 }
 
