@@ -54,6 +54,18 @@ function animMenu(){
     }
 }
 
+function rolar(link, num){
+    var obj = document.getElementById(link).scrollIntoView();
+    var active = document.getElementsByClassName("menu-item")[num];
+    for (let index = 0; index < 4; index++) {
+        var item = document.getElementsByClassName("menu-item")[index];
+        item.style.backgroundColor = "";
+        
+    }
+    active.style.backgroundColor = "rgb(79, 79, 79)";
+    active.style.borderRadius = '5px';
+}
+
 window.onload = function() {
     //redimensionar();
 }

@@ -1,16 +1,53 @@
-@media only screen and (max-device-width: 900px) {
-    .container{
-        width: 60vw;
-        background-color: blue;
-    }
+@media only screen and (max-device-width: 700px) {
+     /*Conteudo será carregado apenas em dispositivos com com tela menor que 700px*/
+}
+
+@media only screen and (max-width:700px){
+    /*Conteudo será carregado sempre que a tela for menor que 700px*/
+   .container{
+       width: 90vw;
+   }
+
+   .itemPortfolio{
+        width: 95%;
+        height: 50vw;
+        margin-bottom: 60px;
+   }
 
 }
 
 
+@media only screen and (max-width:550px){
+    /*Conteudo será carregado sempre que a tela for menor que 550px*/
+   #logo-nav{
+       display: none;
+   }
+}
+
+@media only screen and (min-width:701px){
+     /*Conteudo será carregado sempre que a tela for maior que 701px*/
+    .container{
+        width: 70vw;
+    }
+    .logo-nav{
+        padding-left: 10%;
+    }
+ 
+    .conteudoNav{
+        padding-right: 10%;
+    }
+
+    .itemPortfolio{
+        flex-grow: 1; /* determina que os item ocupem a linha toda (como o width acima faz) */
+        flex-basis: 0; /*força todos os itens a terem o mesmo tamanho*/
+        height: 15vw;
+    }
+}
 
 html{
     scroll-behavior: smooth;
 }
+
 *{
     margin: 0;
     padding: 0;
@@ -47,6 +84,10 @@ body{
     width: 100%;
     display: flex;
     flex-direction: row;
+}
+
+.quebra{
+    flex-wrap: wrap;
 }
 
 .coluna{
@@ -94,9 +135,9 @@ body{
     display: flex;
     background-color: rgb(49, 49, 49);
     opacity: 0.95;
-    width: 96%;
-    padding-left: 2%;
-    padding-right: 2%;
+    width: 98%;
+    padding-left: 1%;
+    padding-right: 1%;
 }
 
 .menuAnimDown {
@@ -129,17 +170,17 @@ body{
     display: flex;
     align-items: center;
     font-size: 12pt;
+    color: rgb(243, 243, 243);
+    text-decoration: none;
     
 }
 
-.menu-item a {
-    color: rgb(243, 243, 243);
-    text-decoration: none;
-}
 
-.menu-item a:hover{
+.menu-item:hover{
     color: rgb(255, 255, 255);
     text-decoration: underline;
+    cursor: pointer;
+
 }
 
 
@@ -151,6 +192,29 @@ body{
 section{
     min-height: 80vh;
     padding-top: 50px;
+}
+
+.info{
+    padding-left: auto;
+    padding-right: auto;
+}
+
+.infoBloco{
+    width: 180px;
+    height: 150px;
+    margin: 5px;
+    border-radius: 10px;
+    border: 1px solid rgb(156, 156, 156);
+    flex-grow: 1;
+    flex-basis: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: rgb(70, 70, 70);
 }
 
 .sobreMim{
