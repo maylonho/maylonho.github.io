@@ -34,6 +34,7 @@ function redimensionar(){
     }
 }
 
+
 function animMenu(){
     var menu = document.getElementsByClassName('menu')[0];
     var container = document.getElementsByClassName('container')[0];
@@ -54,11 +55,11 @@ function animMenu(){
 }
 
 window.onload = function() {
-    redimensionar();
+    //redimensionar();
 }
 
 window.onresize = function(){
-    redimensionar();
+    //redimensionar();
 }
 
 window.onscroll = function(){

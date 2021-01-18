@@ -1,3 +1,13 @@
+@media only screen and (max-device-width: 900px) {
+    .container{
+        width: 60vw;
+        background-color: blue;
+    }
+
+}
+
+
+
 html{
     scroll-behavior: smooth;
 }
