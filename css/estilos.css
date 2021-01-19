@@ -14,6 +14,10 @@
         margin-bottom: 60px;
    }
 
+   .infoBloco{
+    width: 200px;
+    height: 110px;
+   }
 }
 
 
@@ -22,6 +26,13 @@
    #logo-nav{
        display: none;
    }
+
+   .infoBloco{
+    width: 180px;
+    height: 90px;
+    font-size: 90%;
+   }
+
 }
 
 @media only screen and (min-width:701px){
@@ -42,6 +53,11 @@
         flex-basis: 0; /*força todos os itens a terem o mesmo tamanho*/
         height: 15vw;
     }
+
+    .infoBloco{
+        width: 210px;
+        height: 12vw;
+       }
 }
 
 html{
@@ -194,24 +210,34 @@ section{
     padding-top: 50px;
 }
 
-.info{
-    padding-left: auto;
-    padding-right: auto;
-}
-
 .infoBloco{
-    width: 180px;
-    height: 150px;
     margin: 5px;
     border-radius: 10px;
     border: 1px solid rgb(156, 156, 156);
     flex-grow: 1;
     flex-basis: 1;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
     text-align: center;
-    font-size: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: rgb(70, 70, 70);
+}
+
+.infoLinha{
+    height: 200px;
+    margin: 5px;
+    border-radius: 10px;
+    border: 1px solid rgb(156, 156, 156);
+    flex-grow: 1;
+    flex-basis: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
     padding-left: 10px;
     padding-right: 10px;
     color: rgb(70, 70, 70);
@@ -331,4 +357,10 @@ section{
     background-color: rgb(77, 77, 255);
     cursor: pointer;
 
+}
+
+.imgFoto img{
+    width: 200px;
+    border-radius: 100px;
+    border: 2px solid rgb(120, 120, 120);
 }
