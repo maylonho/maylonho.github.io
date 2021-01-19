@@ -52,6 +52,7 @@
         flex-grow: 1; /* determina que os item ocupem a linha toda (como o width acima faz) */
         flex-basis: 0; /*força todos os itens a terem o mesmo tamanho*/
         height: 15vw;
+        padding-right: 10px;
     }
 
     .infoBloco{
@@ -85,7 +86,6 @@ body{
 
 .container{
     margin: 0 auto;
-    padding-bottom: 100px;
 }
 
 .tamContainerPc{
@@ -203,11 +203,12 @@ body{
 .section{
     border-left: 4px solid rgb(98, 98, 255);
     padding-left: 10px;
+    margin-bottom: 50px;
 }
 
 section{
-    min-height: 80vh;
-    padding-top: 50px;
+    min-height: 90vh;
+    padding-top: 70px;
 }
 
 .infoBloco{
@@ -245,7 +246,6 @@ section{
 
 .sobreMim{
     text-align: justify;
-    margin-bottom: 50px;
 }
 
 .redesSociais{
@@ -263,10 +263,24 @@ section{
     height: 20px;
 }
 
+.imgSeta div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(190, 190, 190);
+    border-radius: 100px;
+}
+
+.imgSeta div:hover{
+    background-color: rgb(150, 150, 150);
+    cursor: pointer;
+}
+
 .portfolio{
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 100px;
 }
 
 
@@ -363,4 +377,26 @@ section{
     width: 200px;
     border-radius: 100px;
     border: 2px solid rgb(120, 120, 120);
+}
+
+footer{
+    text-align: end;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-top: 1px solid rgb(120, 120, 120);
+    background-color: rgb(180, 180, 180);
+}
+
+.copy{
+    font-size: 1.2em;
+}
+
+footer .motivacional{
+    text-align: start;
+    font-size: 0.8em;
+}
+
+footer .citacao{
+    font-size: 1.2em;
+    font-style: italic;
 }

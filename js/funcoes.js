@@ -57,8 +57,9 @@ function animMenu(){
 function rolar(link, num){
     var obj = document.getElementById(link).scrollIntoView();
     var active = document.getElementsByClassName("menu-item")[num];
-    for (let index = 0; index < 4; index++) {
-        var item = document.getElementsByClassName("menu-item")[index];
+    var a = document.querySelectorAll(".menu-item");
+    for (let i = 0; i < a.length; i++) {
+        var item = document.getElementsByClassName("menu-item")[i];
         item.style.backgroundColor = "";
         
     }
@@ -68,6 +69,7 @@ function rolar(link, num){
 
 window.onload = function() {
     //redimensionar();
+    //rolar("home", 0);
 }
 
 window.onresize = function(){
