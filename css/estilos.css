@@ -63,6 +63,7 @@
 
 html{
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 *{
@@ -81,7 +82,21 @@ h1{
 }
 
 body{
-    background-color: rgb(202, 202, 202);
+    background: url("../imgs/infowallpaper.jpg") no-repeat right top fixed;
+}
+
+.conteudo{
+    margin-top: 180px;
+    border-radius: 10px;
+    background-color: rgb(233, 233, 233);
+}
+
+
+.imgFoto img{
+    width: 200px;
+    border-radius: 100px;
+    border: 2px solid rgb(120, 120, 120);
+    margin-bottom: 10px;
 }
 
 .container{
@@ -149,6 +164,9 @@ body{
 
 .menu{
     display: flex;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
     background-color: rgb(49, 49, 49);
     opacity: 0.95;
     width: 98%;
@@ -373,18 +391,13 @@ section{
 
 }
 
-.imgFoto img{
-    width: 200px;
-    border-radius: 100px;
-    border: 2px solid rgb(120, 120, 120);
-}
-
 footer{
     text-align: end;
     padding-top: 30px;
     padding-bottom: 30px;
     border-top: 1px solid rgb(120, 120, 120);
     background-color: rgb(180, 180, 180);
+    opacity: 0.8;
 }
 
 .copy{

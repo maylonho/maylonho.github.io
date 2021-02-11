@@ -34,7 +34,7 @@ function redimensionar(){
     }
 }
 
-
+/*
 function animMenu(){
     var menu = document.getElementsByClassName('menu')[0];
     var container = document.getElementsByClassName('container')[0];
@@ -52,7 +52,7 @@ function animMenu(){
             menu.classList.remove("menuAnimUp");
         }
     }
-}
+} */
 
 function rolar(link, num){
     var obj = document.getElementById(link).scrollIntoView();
