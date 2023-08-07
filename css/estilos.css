@@ -49,10 +49,12 @@
     }
 
     .itemPortfolio{
+        min-width: 250px;
         flex-grow: 1; /* determina que os item ocupem a linha toda (como o width acima faz) */
         flex-basis: 0; /*força todos os itens a terem o mesmo tamanho*/
         height: 15vw;
         padding-right: 10px;
+        padding-bottom: 50px;
     }
 
     .infoBloco{
